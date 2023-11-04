@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Agregar el fondo del CardView -->
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="10dp" />
+        </shape>
+    </item>
+    <!-- Agregar el borde (stroke) alrededor del CardView -->
+    <item
+        android:left="2dp"
+        android:right="2dp"
+        android:top="2dp"
+        android:bottom="2dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/transparent" />
+            <stroke
+                android:width="2dp"
+                android:color="@color/primaryColor" /> <!-- Reemplaza 'your_stroke_color' con el color deseado para el borde -->
+            <corners android:radius="10dp" />
+        </shape>
+    </item>
+</layer-list>
